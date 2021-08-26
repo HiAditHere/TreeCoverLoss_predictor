@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class = "jumbotron">
+
+    <b><u><h2>Tree Cover Loss Predictor</h2></u></b>
+    <p class="lead">Tree Cover Loss Predictor predicts the loss in the Tree Cover based on the release of CO2 and other gases.<br>I used a dataset from kaggle . It comprised of the following features: <b><li>Country</li><li>Tree Cover loss in Hectares</li><li>Year</li><li>Release of Co2 and other gases in Mg</li></p></b>
+
+    <p class = "lead">After some further analysis of the data, I found that the Year and Country did not play any significant role in determining the Tree Cover Loss. <br>So I decided to neglect them while traing a Machine Learning Model.</p>
+
+    <p>I have used Flask to deploy it </p>
+
+    <p>You can find this project on my GitHub as well</p>
+</div>
+
+{% endblock body %}
