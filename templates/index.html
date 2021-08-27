@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="jumbotron">
+        <h2><b>Tree Cover Loss</b></h2>
+        <p class="lead">Predicting the tree cover loss of your country based on the amount of CO2 other gases in mg(milligrams)</p>
+
+        <form action='/predict', method = 'POST'>
+
+            <label>CO2 Levels in Millions of Milligrams</label>
+            <input type="text" name = "getLevels">
+             <br>
+             <br>
+            <button type = 'submit' class = "btn btn-lg btn-success">Predict Tree Cover Loss </button>
+
+        </form>
+</div>
+
+<br>
+ <div class="container">
+
+      <div class="starter-template">
+        <center><p class="lead">The predicted Tree Cover Loss is in<b> Thousands of Hectares </b>.<br> {{pred}} </p></center>
+      </div>
+
+    </div>
+<br>
+
+{% endblock body %}
