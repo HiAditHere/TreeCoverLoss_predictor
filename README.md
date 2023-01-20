@@ -6,8 +6,6 @@ Country, Year were additional features present in the dataset. I used Random For
 have very less importance. Thus I decided to exclude them while training a ML model. I used Linear Regression as classifier because this is a 'prediction problem'. The model yieds
 a good accuracy.
 
-I have deployed this on heroku. I have made use of flask. Here is the link : https://todo-flaskprojecttcl.herokuapp.com/
-
 I had a Requirements.txt file for this but I forgot to setup a virtual enviornmwnt from the beginning :P. There were just too many unecessary packages to be installed. So I have
 not provided one. But the requirements are farely basic and if not present, you could simply pip install them. Hope you find it good.
 **Hope you like it, Feel Free To Contribute**
